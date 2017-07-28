@@ -1,7 +1,11 @@
 1.create new clone　をクリック
 2.URLに https://github.com/take8763/unity を入力
-3.選択したファイルにデータがダウンロードされる
+
 
 アップロード
 1.changes　で変更したファイルがある場合 summaryに適当な名前を入れ commit する
 2.Push originを押してアップロード
+
+ダウンロード
+1.Fetch originでファイルに変更があるかを確認
+2.あった場合は同じ場所をもう一度押す
