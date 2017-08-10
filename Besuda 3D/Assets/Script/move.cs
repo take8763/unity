@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class move : MonoBehaviour {
     public Transform target;
-
+    public float x, z;
 	// Use this for initialization
 	void Start () {
 		
@@ -12,9 +12,27 @@ public class move : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        Vector3 A = new;
-        Vector3(target.position.x, target.position.y, target.position.z);
-        transform.position = target.position;
-        
-	}
+
+
+        if (Input.GetKey(KeyCode.A))
+        {
+            transform.position = new Vector3(transform.position.x - 0.1f, 0f, z);
+            x = x - 0.1f;
+        }
+        if (Input.GetKey(KeyCode.D))
+        {
+            transform.position = new Vector3(transform.position.x + 0.1f, 0f, z);
+            x = x + 0.1f;
+        }
+        if (Input.GetKey(KeyCode.W))
+        {
+            transform.position = new Vector3(x, 0f,transform.position.z + 0.1f);
+            z = z + 0.1f;
+        }
+        if (Input.GetKey(KeyCode.S))
+        {
+            transform.position = new Vector3(x, 0f,transform.position.z - 0.1f);
+            z = z - 0.1f;
+        }
+    }
 }
