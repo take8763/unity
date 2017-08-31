@@ -7,6 +7,7 @@ public class move : MonoBehaviour {
     public Transform target;
     public Transform cam;
     public float x, z,deg=0;
+
 	// Use this for initialization
 	void Start () {
 		
