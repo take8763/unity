@@ -1,10 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System;
 using UnityEngine;
 
 public class move : MonoBehaviour {
     public Transform target;
-    public float x, z;
+    public Transform cam;
+    public float x, z,deg=0;
 	// Use this for initialization
 	void Start () {
 		
@@ -33,6 +35,14 @@ public class move : MonoBehaviour {
         {
             transform.position = new Vector3(x, 0f,transform.position.z - 0.1f);
             z = z - 0.1f;
+        }
+        if (Input.GetKey(KeyCode.LeftArrow))
+        {
+
+        }
+        if (Input.GetKey(KeyCode.RightArrow))
+        {
+
         }
     }
 }
